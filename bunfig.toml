@@ -1,0 +1,7 @@
+[install.cache]
+dir = ".bun/cache"
+disable = false
+disableManifest = false
+
+[install.lockfile]
+save = true
