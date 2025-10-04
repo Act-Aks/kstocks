@@ -18,6 +18,12 @@ export const metadata: Metadata = {
         'Track real-time stock prices, get personalized alerts and explore detailed company insights',
 }
 
+/**
+ * Wraps application content in the root HTML and body elements, applying the dark theme and global fonts.
+ *
+ * @param children - The React nodes to render inside the document body
+ * @returns The root HTML structure (html > body) with font variables and the `antialiased` class containing `children`
+ */
 export default function RootLayout({
     children,
 }: Readonly<{
