@@ -1,5 +1,13 @@
 import { useEffect, useRef } from 'react'
 
+/**
+ * Creates a ref for mounting a TradingView widget and ensures the widget script and configuration are injected once.
+ *
+ * @param scriptUrl - URL of the external TradingView script to load into the container
+ * @param config - Configuration object to pass to the widget script
+ * @param height - Desired widget height in pixels (defaults to 600)
+ * @returns A React ref to attach to the div that will host the TradingView widget
+ */
 export function useTradingViewWidget(
     scriptUrl: string,
     config: Record<string, unknown>,

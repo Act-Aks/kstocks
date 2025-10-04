@@ -7,6 +7,11 @@ import {
 } from '@/lib/constants'
 import { getWidgetScriptUrl } from '@/lib/utils'
 
+/**
+ * Render the home page containing a responsive grid of TradingView widgets.
+ *
+ * @returns A JSX.Element with two grid sections that together display four configured TradingViewWidget components (Market Overview, Stock Heatmap, Top Stories timeline, and Market Quotes).
+ */
 export default function HomePage() {
     return (
         <div className='home-wrapper flex min-h-screen'>

@@ -19,6 +19,11 @@ import { routes } from '@/lib/constants'
 export const UserDropdown: React.FC = () => {
     const router = useRouter()
 
+    /**
+     * Navigate the application to the sign-in page.
+     *
+     * Redirects the current route to `routes.SignIn` using the router.
+     */
     function signOut() {
         router.push(routes.SignIn)
     }

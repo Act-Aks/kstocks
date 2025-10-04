@@ -7,6 +7,12 @@ import { navItems, routes } from '@/lib/constants'
 export const NavItem: React.FC = () => {
     const pathname = usePathname()
 
+    /**
+     * Determine whether the provided navigation path is active given the current pathname.
+     *
+     * @param path - The navigation path to check for active state.
+     * @returns `true` if the current pathname starts with `path`, except when `path` equals `routes.Dashboard` in which case the pathname must exactly match `routes.Dashboard`; `false` otherwise.
+     */
     function isActive(path: string) {
         if (path === routes.Dashboard) {
             return pathname === routes.Dashboard
