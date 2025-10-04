@@ -391,9 +391,9 @@
 /* TradingView Advanced Chart Widget Styles */
 .tradingview-widget-container {
   position: relative;
+  overflow: hidden !important;
   background-color: #141414 !important;
   border-radius: 8px !important;
-  overflow: hidden !important;
 }
 
 .tv-embed-widget-wrapper__body {
@@ -401,8 +401,8 @@
 }
 
 .tradingview-widget-container__widget {
-  background-color: #141414 !important;
   height: 100% !important;
+  background-color: #141414 !important;
 
 }
 
@@ -422,10 +422,10 @@
 }
 
 .tradingview-widget-copyright {
+  padding: 4px 0;
   font-size: 11px;
   color: #9ca3af;
   text-align: center;
-  padding: 4px 0;
   background-color: transparent;
 }
 
@@ -446,20 +446,20 @@
 }
 
 .tradingview-widget-container iframe {
-  background-color: #141414 !important;
   width: 100% !important;
+  background-color: #141414 !important;
 }
 
 .custom-chart.tradingview-widget-container iframe {
+  overflow: hidden !important;
   border: 1px solid #30333A;
   border-radius: 8px !important;
-  overflow: hidden !important;
 }
 
 /* Custom scrollbar that shows on hover */
 .scrollbar-hide-default {
-  scrollbar-width: thin;
   scrollbar-color: transparent transparent;
+  scrollbar-width: thin;
 }
 
 .scrollbar-hide-default::-webkit-scrollbar {
@@ -485,5 +485,5 @@
 }
 
 .scrollbar-hide-default::-webkit-scrollbar-thumb:hover {
-  background-color: #9095A1;
+    background-color: #9095a1;
 }
